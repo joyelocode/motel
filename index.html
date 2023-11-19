@@ -1,38 +1,372 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sueño Dorado</title>
-  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="../motel/src/css/style.css">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
     referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-  <header>
-    <div class="content flex_space">
-      <div class="logo">
-        <img src="#" alt="logo">
-      </div>
-      <div class="navlinks">
-        <ul id="menulist">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#rooms">Rooms</a></li>
-          <li><a href="#pages">Pages</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><i class="fa fa-search"></i></li>
-          <li><button class="primary-btn">BOOK NOW</button></li>
+  <header class="header" id="navigation-menu">
+    <div class="container">
+      <nav>
+        <a href="#" class="logo"> <h2>SUEÑO DORADO</h2> </a>
+
+        <ul class="nav-menu">
+          <li> <a href="#hogar" class="nav-link">Hogar</a> </li>
+          <li> <a href="#about" class="nav-link">Acerca de</a> </li>
+          <li> <a href="#rooms" class="nav-link">Habitaciones</a> </li>
+          <li> <a href="#restaurant" class="nav-link">Restaurante</a> </li>
+          <li> <a href="#gallery" class="nav-link">Galería</a> </li>
+          <li> <a href="#contact" class="nav-link">Contacto</a> </li>
         </ul>
-        <span class="fa fa-bars"></span>
+
+        <div class="hambuger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="home" id="hogar">
+    <div class="head_container">
+      <div class="box">
+        <div class="text">
+          <h1>Sueño Dorado</h1>
+          <p>El Motel Sueño Dorado es un destino encantador que ofrece habitaciones cómodas y servicios de calidad en un entorno pintoresco y acogedor. Es perfecto para escapadas románticas o momentos de descanso inolvidables. </p>
+          <button>MÁS INFORMACIÓN</button>
+        </div>
+      </div>
+      <div class="image">
+        <img src="../motel/src/assets/image/home1.jpg" class="slide">
+      </div>
+      <div class="image_item">
+        <img src="../motel/src/assets/image/home1.jpg" alt="" class="slide active" onclick="img('../motel/src/assets/image/home1.jpg')">
+        <img src="../motel/src/assets/image/home2.jpg" alt="" class="slide" onclick="img('../motel/src/assets/image/home2.jpg')">
+        <img src="../motel/src/assets/image/home3.jpg" alt="" class="slide" onclick="img('../motel/src/assets/image/home3.jpg')">
+        <img src="../motel/src/assets/image/home4.jpg" alt="" class="slide" onclick="img('../motel/src/assets/image/home4.jpg')">
       </div>
     </div>
+  </section>
+  
+  <section class="social-media top" id="redsocial">
+    <div class="container flex">
+      <div class="social-box">
+        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+      </div>
+      <div class="social-box">
+        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <div class="social-box">
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="social-box">
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="social-box">
+        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </section>
+  
 
-  </header>
+  <section class="about top" id="about">
+    <div class="container flex">
+      <div class="left">
+        <div class="img">
+          <img src="../motel/src/assets/image/bc.jpg" alt="" class="image1">
+          <!--<img src="../motel/src/assets/image/de.jpg" alt="" class="image2">-->
+        </div>
+      </div>
+      <div class="right">
+        <div class="heading">
+          <h5>ELEVANDO LA COMODIDAD AL MÁS ALTO NIVEL</h5>
+          <h2>Bienvenidos al Motel Sueño Dorado</h2>
+          <p>Motel Sueño Dorado es un acogedor y encantador destino de alojamiento diseñado para brindar una experiencia memorable a sus huéspedes. Ubicado en un entorno pintoresco, ofrece habitaciones confortables y bien equipadas para asegurar una estancia placentera. </p>
+          <p>Con una atención personalizada y servicios de calidad, el Motel Sueño Dorado se destaca por su hospitalidad excepcional y ambiente acogedor. Ya sea para una escapada romántica o un merecido descanso, este lugar se esfuerza por hacer que cada visita sea especial y memorable.</p>
+          <button class="btn1">LEER MÁS</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="wrapper top">
+    <div class="container">
+      <div class="text">
+        <h2>Servicios Incluidos</h2>
+        <p>"En el Motel Sueño Dorado, nos enorgullecemos de ofrecer una experiencia de alojamiento excepcional, donde la comodidad y la conveniencia se unen para crear momentos inolvidables. Nuestras habitaciones están diseñadas pensando en tu confort, con una gama de servicios y comodidades destacadas." </p>
 
-  <script src="./src/js/main.js"></script>
+        <div class="content">
+          <div class="box flex">
+            <i class="fa fa-restroom"></i>
+            <span>Baño Privado</span>
+          </div>
+          <div class="box flex">
+            <i class="fa fa-tv"></i>
+            <span>Televisión</span>
+          </div>
+          <div class="box flex">
+            <i class="fa fa-wifi"></i>
+            <span>wifi</span>
+          </div>
+          <div class="box flex">
+            <i class="fa fa-user-secret"></i>
+            <span>Seguridad</span>
+          </div>
+          <div class="box flex">
+            <i class="fa fa-eye-slash"></i>
+            <span>Privacidad</span>
+          </div>
+          <div class="box flex">
+            <i class="fa fa-cubes"></i>
+            <span>Decoración</span>
+          </div>
+          <div class="box flex">
+            <i class="fa fa-cookie-bite"></i>
+            <span>Dulces</span>
+          </div>
+          <div class="box flex">
+            <i class="fa fa-baseball"></i>
+            <span>SexShop</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="room top" id="room">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>ELEVANDO EL CONFORT AL MÁS ALTO NIVEL</h5>
+          <h2>Habitaciones y Suites</h2>
+        </div>
+        <div class="button">
+          <button class="btn1">VER TODO</button>
+        </div>
+      </div>
+
+      <div class="content grid">
+        <div class="box">
+          <div class="img">
+            <img src="../motel/src/assets/image/bc.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>SUITE</h3>
+            <p> <span>$</span>30.000 <span>/Por noche</span> </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="../motel/src/assets/image/de.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>SUITE</h3>
+            <p> <span>$</span>30.000 <span>/Por noche</span> </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="../motel/src/assets/image/bc.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>SUITE</h3>
+            <p> <span>$</span>30.000 <span>/Por noche</span> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="wrapper wrapper2 top">
+    <div class="container">
+      <div class="text">
+        <div class="heading">
+          <h5>EN EL CENTRO DE LA COMUNICACIÓN</h5>
+          <h2>La gente dice</h2>
+        </div>
+
+        <div class="para">
+          <p>"Mi estancia en el Motel Sueño Dorado fue simplemente espectacular. Desde el momento en que ingresé, quedé impresionada por la atención al detalle y la comodidad que ofrecían. Las habitaciones son simplemente encantadoras, con un ambiente acogedor y una decoración que te hace sentir como en casa"</p>
+
+          <div class="box flex">
+            <div class="img">
+              <img src="../motel/src/assets/image/c.jpg" alt="">
+            </div>
+            <div class="name">
+              <h5>Diana Marcela Martines</h5>
+              <h5>Belén Umbría</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="restaurant top" id="restaurant">
+    <div class="container flex">
+      <div class="left">
+        <img src="../motel/src/assets/image/re.jpg" alt="">
+      </div>
+      <div class="right">
+        <div class="text">
+          <h2>Restaurante</h2>
+          <p>"Nuestro restaurante se especializa en llevar la excelencia culinaria directamente a tu habitación. Con un menú diverso y servicio al cuarto impecable, nos comprometemos a hacer de tu estancia una experiencia gastronómica excepcional y conveniente."</p>
+        </div>
+        <div class="accordionWrapper">
+          <div class="accordionItem open">
+            <h2 class="accordionIHeading">Entradas</h2>
+            <div class="accordionItemContent">
+              <p>Deléitate con nuestros inicios irresistibles: desde frescas ensaladas hasta exquisitas tapas, cada bocado te prepara para una experiencia culinaria memorable.
+              </p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">Platos Fuertes</h2>
+            <div class="accordionItemContent">
+              <p>Nuestros platos principales son la definición de deleite culinario. Desde sabores clásicos hasta creaciones innovadoras, cada plato está cuidadosamente elaborado para satisfacer tus gustos más exigentes.
+              </p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">Postres</h2>
+            <div class="accordionItemContent">
+              <p>¿Dulce tentación? Sumérgete en nuestros postres indulgentes. Desde suaves mousses hasta tentadoras tartas, cerrar tu comida con uno de nuestros postres es el toque perfecto para una experiencia gastronómica completa.
+              </p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">Bebidas</h2>
+            <div class="accordionItemContent">
+              <p>Refréscate con nuestra selección de bebidas: desde opciones clásicas hasta creaciones exclusivas. Nuestra variedad de bebidas complementa a la perfección cada plato y te invita a disfrutar de una experiencia completa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="gallary mtop " id="gallary">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>BIENVENIDO A NUESTRA GALERIA DE FOTOS</h5>
+          <h2>Galería de fotos de nuestro Motel</h2>
+        </div>
+        <div class="button">
+          <button class="btn1">VER GALERÍA</button>
+        </div>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="../motel/src/assets/image/cd.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="../motel/src/assets/image/ab.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="../motel/src/assets/image/de.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="../motel/src/assets/image/bc.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="../motel/src/assets/image/g5.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="../motel/src/assets/image/g6.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="../motel/src/assets/image/g7.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="../motel/src/assets/image/g8.jpg" alt="">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+
+  <section class="map top">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3202.247843980658!2d-75.850585!3d5.252696!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e47a3494715e58f%3A0x4e9ccdca9d547a48!2sMotel%20Sue%C3%B1o%20Dorado!5e1!3m2!1ses-419!2sbr!4v1700269117813!5m2!1ses-419!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+
+  <footer>
+    <div class="container grid top">
+      <div class="box">
+        <!--<img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/48/000000/external-hotel-hotel-services-and-city-elements-flatart-icons-flat-flatarticons-1.png" />-->
+        <p> "Gracias por elegir el Motel Sueño Dorado para tu estadía. ¡Esperamos verte de nuevo para ofrecerte otra experiencia inolvidable!" </p>
+        <br>
+        <p>Aceptamos pagos con tarjeta de crédito, débito y efectivo para tu comodidad.</p>
+        <br>
+        <div class="payment grid">
+          <img src="https://img.icons8.com/color/48/000000/visa.png" />
+          <img src="https://img.icons8.com/color/48/000000/mastercard.png" />
+          <img src="https://img.icons8.com/color-glass/48/000000/paypal.png" />
+          <img src="https://img.icons8.com/fluency/48/000000/amex.png" />
+        </div>
+      </div>
+
+      <div class="box">
+        <h3>Noticias recientes</h3>
+
+        <ul>
+          <li>Nuevo servicio decoración a pedido</li>
+          <li>Nuevo servicio comida a tu habitación</li>
+          <li>Proximo servicio de Sexshop</li>
+          <li>Diciembre en Motel Sueño Dorado</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Para clientes</h3>
+        <ul>
+          <li>Sobre Motel Sueño Dorado</li>
+          <li>Atención al cliente/Ayuda</li>
+          <li>Cuentas corporativas</li>
+          <li>Información financiera</li>
+          <li>Términos y condiciones</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Contáctenos</h3>
+
+        <ul>
+          <li>Kilometro 8, vía mistrato-Belén de Umbría</li>
+          <li><i class="far fa-envelope"></i>sueño_dorado@gmail.com </li>
+          <li><i class="far fa-phone-alt"></i>3127186236 </li>
+          <li><i class="far fa-phone-alt"></i>3127186236 </li>
+          <li><i class="far fa-comments"></i>Servicio al cliente 24 horas al día, 7 días a la semana </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../motel/src/js/main.js"></script>
 </body>
+
 </html>
