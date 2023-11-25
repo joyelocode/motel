@@ -25,13 +25,8 @@ a {
   margin: auto;
 }
 
-.head_container {
-  max-width: 90%;
-  margin: auto;
-}
-
-/*--------------header--------*/
-header {
+/*--------------.header-container--------*/
+.header-container {
   height: 8vh;
 }
 
@@ -39,18 +34,18 @@ header {
   width: 120px;
 }*/
 
-header nav {
+.header-container nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
 }
 
-header nav h2 {
+.header-container nav h2 {
   color: #efb810;
 }
 
-.hambuger {
+.hambuger-container  {
   display: none;
 }
 
@@ -63,29 +58,29 @@ header nav h2 {
   background-color: #fff;
 }
 
-header ul {
+.header-container ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header ul li {
+.header-container ul li {
   margin-left: 3rem;
 }
 
-header ul li a {
+.header-container ul li a {
   font-size: 1.2rem;
   font-weight: 400;
   color: white;
   transition: 0.5s;
 }
 
-header ul li a:hover {
+.header-container ul li a:hover {
   color: #C1B086;
 }
 
 @media only screen and (max-width: 768px) {
-  header ul {
+  .header-container ul {
     display: block;
     position: fixed;
     left: -100%;
@@ -100,40 +95,46 @@ header ul li a:hover {
     z-index: 20;
   }
 
-  header ul.active {
+  .header-container ul.active {
     left: 0%;
   }
 
-  header ul li {
+  .header-container ul li {
     margin: 2.5rem 0;
   }
 
-  header ul li a {
+  .header-container ul li a {
     color: black;
   }
 
-  .hambuger {
+  .hambuger-container  {
     display: block;
     cursor: pointer;
   }
 
-  .hambuger.active .bar:nth-child(2) {
+  .hambuger-container .active .bar:nth-child(2) {
     opacity: 0;
   }
 
-  .hambuger.active .bar:nth-child(1) {
+  .hambuger-container .active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
 
-  .hambuger.active .bar:nth-child(3) {
+  .hambuger-container .active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
 
-/*--------------header--------*/
+/*--------------.header-container--------*/
 /*--------------home--------*/
 
-.home .image img {
+
+.home_container-section .head-container {
+  max-width: 90%;
+  margin: auto;
+}
+
+.home_container-section .image img {
   position: absolute;
   top: 0;
   left: 0;
@@ -142,19 +143,19 @@ header ul li a:hover {
   height: 100%;
 }
 
-.home .text {
+.home_container-section .text {
   max-width: 50%;
   color: white;
   margin: 20% 0 0 10%;
 }
 
-.home h1 {
+.home_container-section h1 {
   color: #efb810;
   font-size: 80px;
   font-weight: 400;
 }
 
-.home p {
+.home_container-section p {
   font-weight: 400;
   line-height: 25px;
   font-family: sans-serif;
@@ -172,11 +173,11 @@ button {
   margin-top: 20px;
 }
 
-.home button {
+.home_container-section button {
   margin-left: 50px;
 }
 
-.home .image_item {
+.home_container-section .image-item {
   position: absolute;
   top: 20%;
   right: 20%;
@@ -185,22 +186,22 @@ button {
   cursor: pointer;
 }
 
-.home .image_item img {
+.home_container-section .image-item img {
   width: 140px;
   height: 94px;
   margin: 10px;
   transition: 0.5s;
 }
 
-.home .image_item img.active {
+.home_container-section .image-item img.active {
   border: 2px solid white;
 }
 
-.home .box .text {
+.home_container-section .box .text {
   position: relative;
 }
 
-/*.home .box .text::after {
+/*.home_container-section .box .text::after {
   position: absolute;
   content: 'H';
   font-size: 500px;
@@ -254,8 +255,64 @@ button {
   transition: color 0.3s ease-in-out;
 }
 
-.social-link:hover {
-  color: #09f; /* Cambiar por el color deseado al pasar el ratón */
+.social-link .fab.fa-whatsapp {
+  background: linear-gradient(45deg, #4DC247, #075E54); /* Colores degradados de WhatsApp */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+
+.social-link .fab.fa-facebook-f {
+  background: linear-gradient(45deg, #3b5998, #4267B2); /* Colores degradados de Facebook */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+
+.social-link .fab.fa-instagram {
+  background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80); /* Colores degradados de Instagram */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.social-link .fab.fa-linkedin {
+  background: linear-gradient(45deg, #0077B5, #0077B5); /* Colores degradados de LinkedIn */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.social-link .fa-brands.fa-tiktok {
+  background: linear-gradient(45deg, #000, #333); /* Colores degradados de TikTok */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.social-link .fab.fa-youtube {
+  background: linear-gradient(45deg, #FF0000, #FF0000); /* Colores degradados de YouTube */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.social-box {
+  transition: all 0.3s ease;
 }
 
 /*--------------book--------*/
@@ -590,12 +647,12 @@ footer li:hover a:hover {
 }
 
 @media only screen and (max-width:768px) {
-  .home .box .text {
+  .home_container-section .box .text {
     max-width: 100%;
   }
 
-  .home .box .text::after,
-  .home .image_item {
+  .home_container-section .box .text::after,
+  .home_container-section .image-item {
     display: none;
   }
 
@@ -653,16 +710,16 @@ footer li:hover a:hover {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .home .text {
+  .home_container-section .text {
     margin: 10% 0 0 0;
   }
 
-  .home h1 {
+  .home_container-section h1 {
     font-size: 40px;
   }
 
   .about p,
-  .home p {
+  .home_container-section p {
     margin: 50px 0 0 0;
   }
 
@@ -688,12 +745,45 @@ footer li:hover a:hover {
 
 @media screen and (max-width: 1024px) {
   .social-box {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
   }
 
   .social-link {
-    font-size: 16px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .social-box {
+    width: 55px;
+    height: 55px;
+  }
+
+  .social-link {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 671px) {
+  .social-box {
+    width: 50px;
+    height: 50px;
+  }
+
+  .social-link {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 628px) {
+  .social-box {
+    width: 55px;
+    height: 55px;
+  }
+
+  .social-link {
+    font-size: 22px;
   }
 }
 

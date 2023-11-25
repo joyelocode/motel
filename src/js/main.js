@@ -31,6 +31,8 @@ function change(change) {
 
 // ...
 
+// ...
+
 let accItem = document.getElementsByClassName('accordionItem');
 let accHD = document.getElementsByClassName('accordionIHeading');
 
