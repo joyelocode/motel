@@ -776,14 +776,16 @@ footer li:hover a:hover {
   }
 }
 
-@media screen and (max-width: 628px) {
+@media screen and (max-width: 480px) {
   .social-box {
-    width: 55px;
-    height: 55px;
+    width: 40px;
+    height: 40px;
   }
 
   .social-link {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
+
+
 
