@@ -1,6 +1,6 @@
 // ...
 
-const hambuger = document.querySelector('.hambuger');
+const hambuger = document.querySelector('.hambuger-container');
 const navMenu = document.querySelector('.nav-menu');
 
 hambuger.addEventListener("click", mobileMenu);
